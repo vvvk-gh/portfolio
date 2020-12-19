@@ -49,10 +49,10 @@ $(document).ready(function() {
     //     console.log(t);
     // })
 
-    $(document).on('click', '.filter-button', function(event) {
+    $(document).on('click', '.filter-button', function() {
         const value = $(this).attr('datafilter');
         console.log(value);
-        
+
         if(value == 'all'){
             $('.filter').show('1000');
         }
