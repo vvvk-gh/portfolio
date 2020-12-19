@@ -36,5 +36,30 @@ $(document).ready(function() {
         animateStartValues[i] =0; 
         animate(i,barToBeSetValues[i],time)  
     })
+
+    
+    // $('.filter-button').click(()=>{
+    //     console.log($(this));
+    //     // value = $(this).attr('data-filter');
+    // });
+
+    // $('.filter-button').on('click' , ()=>{
+    //     console.log('Btn clicked');
+    //     var t = alert($(this).closest('.btns').attr("datafilter"));
+    //     console.log(t);
+    // })
+
+    $(document).on('click', '.filter-button', function(event) {
+        const value = $(this).attr('datafilter');
+        console.log(value);
+        
+        if(value == 'all'){
+            $('.filter').show('1000');
+        }
+        else{
+            $('.filter').not('.'+value).hide('3000');
+            $('.filter').filter("."+value).show('3000')
+        }
+    })
     
 });
