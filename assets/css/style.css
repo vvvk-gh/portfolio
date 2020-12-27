@@ -55,35 +55,6 @@ body {
   list-style: square;
 }
 
-/* .imageborder {
-  border-radius: 50%;
-  height: auto;
-  width: auto;
-  border: 3px dashed grey;
-  transition: ease-in 0.7s;
-} */
-
-/* .imageborder:hover {
-  border: 3px dashed black;
-  transform: rotate(360deg);
-} */
-/* .nes-avatar {
-  position: relative; */
-/*animation-name: move;
-  animation-iteration-count: infinite;
-  animation-duration: 0.8s; */
-/* left: -200px; */
-/* } */
-/* 
-@keyframes move {
-  0% {
-    left: 0px;
-  }
-  100% {
-    left: -200px;
-  }
-} */
-
 @media (min-width: 48em) {
   .nav-masthead {
     float: right;
